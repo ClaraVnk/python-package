@@ -93,6 +93,7 @@ Your folder directory's name MUST match your github repository AND your PROJECT_
 
 ## Requirements
 
+- LINUX
 - Python 3.x
 - `build` module (`pip install build`)
 - `twine` module (`pip install twine`)
