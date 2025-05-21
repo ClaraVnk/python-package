@@ -2,6 +2,7 @@
 set -e  # stop on error
 
 echo "🧹 Nettoyage des anciens builds..."
+rm -rf dist/*
 
 echo "📥 Récupération des dernières modifications depuis GitHub..."
 git pull
