@@ -4,8 +4,17 @@ set -e  # stop on error
 echo "🧹 Nettoyage des anciens builds..."
 rm -rf dist/*
 
-echo "📥 Récupération des dernières modifications depuis GitHub..."
-git pull
+echo "📥 Vérification de la présence d'un dépôt Git..."
+if [ -d .git ]; then
+  echo "📥 Récupération des dernières modifications depuis GitHub..."
+  git pull
+else
+  echo "⚠️ Ce dossier n'est pas un dépôt Git, espèce de gourdasse. Voyons ce qu'on peut faire..."
+  cd ~/projects
+  rm -rf openstack-toolbox  # ⚠️ attention : suppression complète du dossier
+  git clone https://github.com/ClaraVnk/openstack-toolbox.git
+  cd openstack-toolbox
+fi
 
 echo "🛠️ Construction du package..."
 python -m build
