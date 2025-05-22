@@ -4,7 +4,7 @@ set -e
 # Variables
 SCRIPT_URL="https://raw.githubusercontent.com/ClaraVnk/python-package/main/python-package.sh"
 SCRIPT_PATH="$HOME/python-package.sh"
-ALIAS_NAME="publish_py"
+ALIAS_NAME="publishpy"
 BASHRC="$HOME/.bashrc"
 
 echo "📥 Downloading the script from GitHub..."

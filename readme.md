@@ -8,7 +8,7 @@ This repository contains two helper scripts to streamline the publishing of Pyth
 
 ## 🔧 1. `install_publish_alias.sh`
 
-This script installs a global shell alias (`publish_py`) that allows you to quickly publish your package from any project folder.
+This script installs a global shell alias (`publishpy`) that allows you to quickly publish your package from any project folder.
 
 ### 📦 Installation
 
@@ -33,7 +33,7 @@ source ~/.bashrc  # or source ~/.zshrc depending on your shell
 Navigate to your project folder and run:
 
 ```bash
-publish_py
+publishpy
 ```
 
 This command will:
